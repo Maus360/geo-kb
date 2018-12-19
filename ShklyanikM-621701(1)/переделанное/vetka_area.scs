@@ -1,0 +1,16 @@
+Vetka_area<-concept_area;;
+Vetka_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+//адм центр
+Vetka_area->nrel_administrative_center_of_the_area:Vetka;;
+Vetka<-concept_city;;
+
+//самая высокая точка
+Vetka_area  => nrel_highest_point: [ 295];;
+Vetka_area => nrel_area_of_the_district: [1558];;
+Vetka_area => nrel_population_of_region: [17776];;
+
+
+
+

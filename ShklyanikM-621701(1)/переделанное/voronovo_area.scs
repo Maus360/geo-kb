@@ -1,0 +1,25 @@
+Voronovo_area<-concept_area;;
+Voronovo_area<=inclusion:Grodno_region;;
+Grodno_region<-concept_region;;
+
+Voronovo_area->nrel_administrative_center_of_the_area:Voronovo;;
+Voronovo<-concept_city;;
+
+Voronovo_area  => nrel_highest_point: [215];;
+
+Voronovo_area => nrel_area_of_the_district: [1418];;
+
+Voronovo_area => nrel_population_of_region: [24911];;
+
+
+
+
+sc_node_not_relation -> Voronovo_area;;
+Voronovo_area => nrel_main_idtf:
+[Вороновский район](* <-lang_ru;; *);
+[ Voronovo area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Voronovo;;
+Voronovo=> nrel_main_idtf:
+[Вороново](* <-lang_ru;; *);
+[Voronovo](* <- lang_en;; *);;

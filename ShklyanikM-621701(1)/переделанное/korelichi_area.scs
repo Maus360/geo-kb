@@ -1,0 +1,26 @@
+Korelichi_area<-concept_area;;
+Korelichi_area<=inclusion:Grodno_region;;
+Grodno_region<-concept_region;;
+
+Korelichi_area->nrel_administrative_center_of_the_area:Korelichi;;
+Korelichi<-concept_city;;
+
+
+Korelichi_area  => nrel_highest_point: [143];;
+
+Korelichi_area => nrel_area_of_the_district: [1094];;
+
+Korelichi_area => nrel_population_of_region: [19691];;
+
+
+
+
+sc_node_not_relation -> Korelichi_area;;
+Korelichi_area => nrel_main_idtf:
+[Кореличский район](* <-lang_ru;; *);
+[Korelichi area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Korelichi;;
+Korelichi=> nrel_main_idtf:
+[Кореличи](* <-lang_ru;; *);
+[Korelichi](* <- lang_en;; *);;

@@ -1,0 +1,26 @@
+Liozno_area<-concept_area;;
+Liozno_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Liozno_area->nrel_administrative_center_of_the_area:Liozno;;
+Liozno<-concept_township;;
+
+
+Liozno_area  => nrel_highest_point: [ 296];;
+Liozno_area => nrel_area_of_the_district: [1418];;
+Liozno_area => nrel_population_of_region: [15734];;
+
+
+
+
+
+sc_node_not_relation -> Liozno_area;;
+Liozno_area => nrel_main_idtf:
+[Лиозенский район](* <-lang_ru;; *);
+[Liozno area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Liozno;;
+Liozno=> nrel_main_idtf:
+[Лиозно](* <-lang_ru;; *);
+[Liozno](* <- lang_en;; *);;

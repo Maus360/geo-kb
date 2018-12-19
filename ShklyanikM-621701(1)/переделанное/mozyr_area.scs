@@ -1,0 +1,26 @@
+Mozyr_area<-concept_area;;
+Mozyr_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Mozyr_area->nrel_administrative_center_of_the_area:Mozyr;;
+Mozyr<-concept_city;;
+
+Mozyr_area  => nrel_highest_point: [ 221];;
+Mozyr_area => nrel_area_of_the_district: [1603];;
+Mozyr_area => nrel_population_of_region: [133437];;
+
+
+
+
+
+sc_node_not_relation -> Mozyr_area;;
+Mozyr_area => nrel_main_idtf:
+[Мозырский район](* <-lang_ru;; *);
+[Mozyr area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Mozyr;;
+Mozyr=> nrel_main_idtf:
+[Мозырь](* <-lang_ru;; *);
+[Mozyr](* <- lang_en;; *);;
+

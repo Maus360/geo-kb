@@ -6,7 +6,7 @@ ui_main_menu <= nrel_ui_commands_decomposition:
 {
 	ui_menu_na_view_kb_extended;
 	ui_menu_na_keynodesl;
-	ui_menu_file_for_finding_group_of_lakes
+	ui_menu_agents
 };;
 
 

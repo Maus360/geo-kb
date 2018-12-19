@@ -1,0 +1,27 @@
+Sharkovshchina_area<-concept_area;;
+Sharkovshchina_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Sharkovshchina_area->nrel_administrative_center_of_the_area:Sharkovshchina;;
+Sharkovshchina<-concept_township;;
+
+Sharkovshchina_area  => nrel_highest_point: [ 172];;
+Sharkovshchina_area => nrel_area_of_the_district: [1189];;
+Sharkovshchina_area => nrel_population_of_region: [15453];;
+
+
+
+
+
+
+sc_node_not_relation -> Sharkovshchina_area;;
+Sharkovshchina_area => nrel_main_idtf:
+[Шарковщинский район](* <-lang_ru;; *);
+[Sharkovshchina area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Sharkovshchina;;
+Sharkovshchina=> nrel_main_idtf:
+[Шарковщина](* <-lang_ru;; *);
+[Sharkovshchina](* <- lang_en;; *);;
+

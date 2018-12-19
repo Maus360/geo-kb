@@ -1,0 +1,11 @@
+Brest_Region_Aqueducts
+=> nrel_main_idtf:
+[Акведуки Брестской области](*<-lang_ru;;*);
+[Brest region aqueducts](*<-lang_en;;*);
+<= nrel_subdividing:
+{
+Brestsko_Kobrinski_aqueduct;
+Pinski_aqueduct;
+Ruzhanski_aqueduct
+};
+<-concept_aqueduct;;

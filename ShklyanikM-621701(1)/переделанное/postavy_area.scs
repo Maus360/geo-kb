@@ -1,0 +1,23 @@
+Postavy_area<-concept_area;;
+Postavy_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Postavy_area->nrel_administrative_center_of_the_area:Postavy;;
+Postavy<-concept_city;;
+
+Postavy_area  => nrel_highest_point: [ 240];;
+Postavy_area => nrel_area_of_the_district: [2097];;
+Postavy_area => nrel_population_of_region: [36442];;
+
+
+sc_node_not_relation -> Postavy_area;;
+Postavy_area => nrel_main_idtf:
+[Поставский район](* <-lang_ru;; *);
+[Postavy area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Postavy;;
+Postavy=> nrel_main_idtf:
+[Поставы](* <-lang_ru;; *);
+[Postavy](* <- lang_en;; *);;
+

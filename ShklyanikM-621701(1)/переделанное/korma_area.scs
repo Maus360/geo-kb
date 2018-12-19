@@ -1,0 +1,25 @@
+Korma_area<-concept_area;;
+Korma_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Korma_area->nrel_administrative_center_of_the_area:Korma;;
+Korma<-concept_township;;
+
+Korma_area  => nrel_highest_point: [ 176];;
+Korma_area => nrel_area_of_the_district: [949];;
+Korma_area => nrel_population_of_region: [13624];;
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+
+
+
+
+sc_node_not_relation -> Korma_area;;
+Korma_area => nrel_main_idtf:
+[Кормянский район](* <-lang_ru;; *);
+[Korma area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Korma;;
+Korma=> nrel_main_idtf:
+[Корма](* <-lang_ru;; *);
+[Korma](* <- lang_en;; *);;

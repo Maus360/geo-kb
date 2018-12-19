@@ -1,0 +1,26 @@
+Pinsk_area<-concept_area;;
+Pinsk_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Pinsk_area->nrel_administrative_center_of_the_area:Pinsk;;
+Pinsk<-concept_city;;
+
+Pinsk_area  => nrel_highest_point: [ 174];;
+Pinsk_area => nrel_area_of_the_district: [3253];;
+Pinsk_area => nrel_population_of_region: [46537];;
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+
+
+
+
+sc_node_not_relation -> Pinsk_area;;
+Pinsk_area => nrel_main_idtf:
+[Пинский район](* <-lang_ru;; *);
+[Pinsk area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Pinsk;;
+Pinsk=> nrel_main_idtf:
+[Пинск](* <-lang_ru;; *);
+[Pinsk](* <- lang_en;; *);;
+

@@ -1,0 +1,15 @@
+Drogichin_area<-concept_area;;
+Drogichin_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//адм центр
+Drogichin_area->nrel_administrative_center_of_the_area:Drogichin;;
+Drogichin<-concept_city;;
+
+Drogichin_area  => nrel_highest_point: [ 173];;
+Drogichin_area => nrel_area_of_the_district: [1855];;
+Drogichin_area => nrel_population_of_region: [36433];;
+//самая высокая точка
+
+
+

@@ -1,0 +1,25 @@
+Slonym_area<-concept_area;;
+Slonym_area<=inclusion:Grodno_region;;
+Grodno_region<-concept_region;;
+
+Slonym_area->nrel_administrative_center_of_the_area:Slonym;;
+Slonym<-concept_city;;
+
+Slonym_area  => nrel_highest_point: [223];;
+
+Slonym_area => nrel_area_of_the_district: [1470];;
+
+Slonym_area => nrel_population_of_region: [64117];;
+
+
+
+
+sc_node_not_relation -> Slonym_area;;
+Slonym_area => nrel_main_idtf:
+[Слонимский район](* <-lang_ru;; *);
+[Slonym area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Slonym;;
+Slonym=> nrel_main_idtf:
+[Слоним](* <-lang_ru;; *);
+[Slonym](* <- lang_en;; *);;

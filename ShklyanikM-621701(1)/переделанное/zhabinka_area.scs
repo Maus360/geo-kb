@@ -1,0 +1,26 @@
+Zhabinka_area<-concept_area;;
+Zhabinka_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Zhabinka_area->nrel_administrative_center_of_the_area:Zhabinka;;
+Zhabinka<-concept_city;;
+
+Zhabinka_area  => nrel_highest_point: [ 158];;
+Zhabinka_area => nrel_area_of_the_district: [684];;
+Zhabinka_area => nrel_population_of_region: [24329];;
+
+
+
+
+
+
+sc_node_not_relation -> Zhabinka_area;;
+Zhabinka_area => nrel_main_idtf:
+[Жабинковский район](* <-lang_ru;; *);
+[Zhabinka area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Zhabinka;;
+Zhabinka=> nrel_main_idtf:
+[Жабинка](* <-lang_ru;; *);
+[Zhabinka](* <- lang_en;; *);;

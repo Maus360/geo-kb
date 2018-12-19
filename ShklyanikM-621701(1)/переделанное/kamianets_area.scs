@@ -1,0 +1,28 @@
+Kamianets_area<-concept_area;;
+Kamianets_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Kamianets_area->nrel_administrative_center_of_the_area:Kamianets;;
+Kamianets<-concept_city;;
+
+
+Kamianets_area  => nrel_highest_point: [ 198];;
+Kamianets_area => nrel_area_of_the_district: [1687];;
+Kamianets_area => nrel_population_of_region: [34954];;
+
+
+
+
+
+sc_node_not_relation -> Kamianets_area;;
+Kamianets_area => nrel_main_idtf:
+[Каменецкий район](* <-lang_ru;; *);
+[Kamianets area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Kamianets;;
+Kamianets=> nrel_main_idtf:
+[Каменец](* <-lang_ru;; *);
+[Kamianets](* <- lang_en;; *);;
+
+

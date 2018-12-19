@@ -1,0 +1,26 @@
+Malorita_area<-concept_area;;
+Malorita_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Malorita_area->nrel_administrative_center_of_the_area:Malorita;;
+Malorita<-concept_city;;
+
+
+Malorita_area  => nrel_highest_point: [ 189];;
+Malorita_area => nrel_area_of_the_district: [1374];;
+Malorita_area => nrel_population_of_region: [24306];;
+
+
+
+
+sc_node_not_relation -> Malorita_area;;
+Malorita_area => nrel_main_idtf:
+[Малоритский район](* <-lang_ru;; *);
+[Malorita area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Malorita;;
+Malorita=> nrel_main_idtf:
+[Малорита](* <-lang_ru;; *);
+[Malorita](* <- lang_en;; *);;
+

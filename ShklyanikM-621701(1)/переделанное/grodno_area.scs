@@ -1,0 +1,15 @@
+Grodno_area<-concept_area;;
+Grodno_area<=inclusion:Grodno_region;;
+Grodno_region<-concept_region;;
+
+//адм центр
+Grodno_area->nrel_administrative_center_of_the_area:Grodno;;
+Grodno<-concept_city;;
+
+
+Grodno_area  => nrel_highest_point: [ 323];;
+Grodno_area => nrel_area_of_the_district: [2593];;
+Grodno_area => nrel_population_of_region: [49803];;
+//самая высокая точка
+
+

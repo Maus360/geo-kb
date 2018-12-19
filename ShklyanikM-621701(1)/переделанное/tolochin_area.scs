@@ -1,0 +1,25 @@
+Tolochin_area<-concept_area;;
+Tolochin_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Tolochin_area->nrel_administrative_center_of_the_area:Tolochin;;
+Tolochin<-concept_city;;
+
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+Tolochin_area  => nrel_highest_point: [ 255];;
+Tolochin_area => nrel_area_of_the_district: [1499];;
+Tolochin_area => nrel_population_of_region: [25288];;
+
+
+
+
+sc_node_not_relation -> Tolochin_area;;
+Tolochin_area => nrel_main_idtf:
+[Толочинский район](* <-lang_ru;; *);
+[Tolochin area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Tolochin;;
+Tolochin=> nrel_main_idtf:
+[Толочин](* <-lang_ru;; *);
+[Tolochin](* <- lang_en;; *);;

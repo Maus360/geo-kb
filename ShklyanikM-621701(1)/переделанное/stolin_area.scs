@@ -1,0 +1,28 @@
+Stolin_area<-concept_area;;
+Stolin_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Stolin_area->nrel_administrative_center_of_the_area:Stolin;;
+Stolin<-concept_city;;
+
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+
+Stolin_area  => nrel_highest_point: [ 169];;
+Stolin_area => nrel_area_of_the_district: [3342];;
+Stolin_area => nrel_population_of_region: [73101];;
+
+
+
+
+sc_node_not_relation -> Stolin_area;;
+Stolin_area => nrel_main_idtf:
+[Столинский район](* <-lang_ru;; *);
+[Stolin area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Stolin;;
+Stolin=> nrel_main_idtf:
+[Столин](* <-lang_ru;; *);
+[Stolin](* <- lang_en;; *);;
+
+

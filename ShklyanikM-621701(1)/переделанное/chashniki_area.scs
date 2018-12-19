@@ -1,0 +1,59 @@
+Chashniki_area<-concept_area;;
+Chashniki_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Chashniki_area->nrel_administrative_center_of_the_area:Chashniki;;
+Chashniki<-concept_city;;
+
+Chashniki_area  => nrel_highest_point: [ 242];;
+Chashniki_area => nrel_area_of_the_district: [1481];;
+Chashniki_area => nrel_population_of_region: [31335];;
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+
+
+//ÐžÑÐ¿ÐŸÐ»ÑÐ·ÑÐµÐŒÑÐµ ÐºÐŸÐœÑÑÐ°ÐœÑÑ
+Chashniki_area <- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+*);;
+=> nrel_main_idtf: [Опр.(Чашникский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Чашникский район - административная единица на юге Витебской области.](* <- lang_ru;; *);;
+*);;
+*);;
+
+	
+//ÑÑÐ²ÐµÑÐ¶ÐŽÐµÐœÐžÑ
+Chashniki_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район,озеро)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Основное озеро Чашникоского района - Лукомское](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+
+
+
+sc_node_not_relation -> Chashniki_area;;
+Chashniki_area => nrel_main_idtf:
+[Чашникский район](* <-lang_ru;; *);
+[Chashniki area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Chashniki;;
+Chashniki=> nrel_main_idtf:
+[Чашники](* <-lang_ru;; *);
+[Chashniki](* <- lang_en;; *);;
+

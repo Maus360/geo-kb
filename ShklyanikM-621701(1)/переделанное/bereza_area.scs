@@ -1,0 +1,61 @@
+Bereza_area<-concept_area;;
+Bereza_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Bereza_area->nrel_administrative_center_of_the_area:Bereza;;
+Bereza<-concept_city;;
+
+Bereza_area  => nrel_highest_point: [ 189];;
+
+Bereza_area => nrel_area_of_the_district: [1412];;
+
+Bereza_area => nrel_population_of_region: [62882];;
+
+
+
+//ÐžÑÐ¿ÐŸÐ»ÑÐ·ÑÐµÐŒÑÐµ ÐºÐŸÐœÑÑÐ°ÐœÑÑ
+Bereza_area <- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->nrel_part;;
+*);;
+=> nrel_main_idtf: [Опр.(Берёзовский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Берёзовский район - административная единица на западе Гродненской области.](* <- lang_ru;; *);;
+*);;
+*);;
+
+	
+//ÑÑÐ²ÐµÑÐ¶ÐŽÐµÐœÐžÑ
+Bereza_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район,река,приток*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[По территории Берёзовского района протекает река Ясельда с притоками ВИнец,Жигулянка.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+Bereza_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район, полезные ископаемые,территория,торф,мел] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Полезные ископаемые на территории Берёзовского района - торф, мел.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;

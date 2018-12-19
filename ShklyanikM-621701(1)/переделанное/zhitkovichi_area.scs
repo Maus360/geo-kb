@@ -1,0 +1,24 @@
+Zhitkovichi_area<-concept_area;;
+Zhitkovichi_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Zhitkovichi_area->nrel_administrative_center_of_the_area:Zhitkovichi;;
+Zhitkovichi<-concept_city;;
+
+Zhitkovichi_area  => nrel_highest_point: [ 184];;
+Zhitkovichi_area => nrel_area_of_the_district: [2916];;
+Zhitkovichi_area => nrel_population_of_region: [36360];;
+
+
+
+
+sc_node_not_relation -> Zhitkovichi_area;;
+Zhitkovichi_area => nrel_main_idtf:
+[Житковичский район](* <-lang_ru;; *);
+[Zhitkovichi area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Zhitkovichi;;
+Zhitkovichi=> nrel_main_idtf:
+[Житковичи](* <-lang_ru;; *);
+[Zhitkovichi](* <- lang_en;; *);;

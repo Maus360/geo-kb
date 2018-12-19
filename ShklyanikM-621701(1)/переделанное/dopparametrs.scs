@@ -1,0 +1,14 @@
+sc_node_role_relation ->  rrel_meters;;
+  rrel_meters=> nrel_main_idtf:
+[метры'](* <-lang_ru;; *);
+[ meters'](* <- lang_en;; *);;
+
+sc_node_role_relation ->  rrel_kilometers;;
+  rrel_kilometers=> nrel_main_idtf:
+[километры квадратные'](* <-lang_ru;; *);
+[ kilometers'](* <- lang_en;; *);;
+
+sc_node_role_relation ->  rrel_people;;
+ rrel_people=> nrel_main_idtf:
+[человек'](* <-lang_ru;; *);
+[ people'](* <- lang_en;; *);;

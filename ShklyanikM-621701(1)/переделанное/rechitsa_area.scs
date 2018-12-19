@@ -1,0 +1,25 @@
+Rechitsa_area<-concept_area;;
+Rechitsa_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Rechitsa_area->nrel_administrative_center_of_the_area:Rechitsa;;
+Rechitsa<-concept_city;;
+
+Rechitsa_area  => nrel_highest_point: [ 145];;
+Rechitsa_area => nrel_area_of_the_district: [2714];;
+Rechitsa_area => nrel_population_of_region: [97979];;
+
+
+
+
+sc_node_not_relation -> Rechitsa_area;;
+Rechitsa_area => nrel_main_idtf:
+[Речицкий район](* <-lang_ru;; *);
+[Rechitsa area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Rechitsa;;
+Rechitsa=> nrel_main_idtf:
+[Речица](* <-lang_ru;; *);
+[Rechitsa](* <- lang_en;; *);;
+

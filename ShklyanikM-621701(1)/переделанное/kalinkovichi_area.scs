@@ -1,0 +1,27 @@
+Kalinkovichi_area<-concept_area;;
+Kalinkovichi_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Kalinkovichi_area->nrel_administrative_center_of_the_area:Kalinkovichi;;
+Kalinkovichi<-concept_city;;
+
+Kalinkovichi_area  => nrel_highest_point: [ 168];;
+Kalinkovichi_area => nrel_area_of_the_district: [2756];;
+Kalinkovichi_area => nrel_population_of_region: [60034];;
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+
+
+
+
+
+sc_node_not_relation -> Kalinkovichi_area;;
+Kalinkovichi_area => nrel_main_idtf:
+[Калинковичский район](* <-lang_ru;; *);
+[Kalinkovichi area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Kalinkovichi;;
+Kalinkovichi=> nrel_main_idtf:
+[Калинковичи](* <-lang_ru;; *);
+[Kalinkovichi](* <- lang_en;; *);;
+

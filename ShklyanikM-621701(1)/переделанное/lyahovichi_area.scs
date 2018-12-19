@@ -1,0 +1,27 @@
+Lyakhovichi_area<-concept_area;;
+Lyakhovichi_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Lyakhovichi_area->nrel_administrative_center_of_the_area:Lyakhovichi;;
+Lyakhovichi<-concept_city;;
+
+
+Lyakhovichi_area  => nrel_highest_point: [ 219];;
+Lyakhovichi_area => nrel_area_of_the_district: [1352];;
+Lyakhovichi_area => nrel_population_of_region: [25436];;
+
+
+
+
+
+sc_node_not_relation -> Lyakhovichi_area;;
+Lyakhovichi_area => nrel_main_idtf:
+[Ляховичский район](* <-lang_ru;; *);
+[Lyakhovichi area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Lyakhovichi;;
+Lyakhovichi=> nrel_main_idtf:
+[Ляховичи](* <-lang_ru;; *);
+[Lyakhovichi](* <- lang_en;; *);;
+

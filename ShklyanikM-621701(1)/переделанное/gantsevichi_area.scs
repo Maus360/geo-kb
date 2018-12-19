@@ -1,0 +1,16 @@
+Gantsevichi_area<-concept_area;;
+Gantsevichi_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//адм центр
+Gantsevichi_area->nrel_administrative_center_of_the_area:Gantsevichi;;
+Gantsevichi<-concept_city;;
+
+
+Gantsevichi_area  => nrel_highest_point: [ 195];;
+Gantsevichi_area => nrel_area_of_the_district: [1709];;
+Gantsevichi_area => nrel_population_of_region: [27297];;
+
+
+
+

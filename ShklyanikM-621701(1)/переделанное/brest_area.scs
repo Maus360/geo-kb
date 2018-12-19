@@ -1,0 +1,61 @@
+Brest_area<-concept_area;;
+Brest_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Brest_area->nrel_administrative_center_of_the_area:Brest;;
+Brest<-concept_city;;
+
+Brest_area  => nrel_highest_point: [ 186];;
+Brest_area => nrel_area_of_the_district: [1544];;
+Brest_area => nrel_population_of_region: [42400];;
+
+
+
+//ÐžÑÐ¿ÐŸÐ»ÑÐ·ÑÐµÐŒÑÐµ ÐºÐŸÐœÑÑÐ°ÐœÑÑ
+Brest_area <- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+*);;
+=> nrel_main_idtf: [Опр.(Брестский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Брестский район - административная единица на западе Бресткой области.](* <- lang_ru;; *);;
+*);;
+*);;
+
+	
+//ÑÑÐ²ÐµÑÐ¶ÐŽÐµÐœÐžÑ
+Brest_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район,группа,озеро)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[ В Брестком районе находится Бресткая группа озёр,в том числе Чёрное озеро.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+
+
+Brest_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район,поверхность*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[ Поверхность Бресткого района в основном низинно-равнинная.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+

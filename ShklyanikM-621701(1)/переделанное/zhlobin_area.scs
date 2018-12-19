@@ -1,0 +1,13 @@
+Zhlobin_area<-concept_area;;
+Zhlobin_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+//адм центр
+Zhlobin_area->nrel_administrative_center_of_the_area:Zhlobin;;
+Zhlobin<-concept_city;;
+
+Zhlobin_area  => nrel_highest_point: [ 185];;
+Zhlobin_area => nrel_area_of_the_district: [2110];;
+Zhlobin_area => nrel_population_of_region: [102017];;
+
+

@@ -1,0 +1,26 @@
+Kobrin_area<-concept_area;;
+Kobrin_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Kobrin_area->nrel_administrative_center_of_the_area:Kobrin;;
+Kobrin<-concept_city;;
+
+Kobrin_area  => nrel_highest_point: [ 169];;
+Kobrin_area => nrel_area_of_the_district: [2040];;
+Kobrin_area => nrel_population_of_region: [85047];;
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+
+
+
+
+
+sc_node_not_relation -> Kobrin_area;;
+Kobrin_area => nrel_main_idtf:
+[Кобринский район](* <-lang_ru;; *);
+[Kobrin area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Kobrin;;
+Kobrin=> nrel_main_idtf:
+[Êîáðèí](* <-lang_ru;; *);
+[Kobrin](* <- lang_en;; *);;

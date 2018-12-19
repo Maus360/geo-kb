@@ -1,0 +1,15 @@
+Dobrush_area<-concept_area;;
+Dobrush_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+//адм центр
+Dobrush_area->nrel_administrative_center_of_the_area:Dobrush;;
+Dobrush<-concept_city;;
+
+Dobrush_area  => nrel_highest_point: [ 175];;
+Dobrush_area => nrel_area_of_the_district: [1452];;
+Dobrush_area => nrel_population_of_region: [36864];;
+//самая высокая точка
+
+
+

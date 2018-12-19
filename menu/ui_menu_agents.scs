@@ -1,0 +1,23 @@
+ui_menu_agents <- ui_user_command_class_noatom;
+=> nrel_main_idtf:[Агенты](* <- lang_ru;; *);
+=> nrel_main_idtf:[Agents](* <- lang_en;; *);
+<= nrel_ui_commands_decomposition:
+{
+	ui_menu_file_for_finding_group_of_lakes;
+	ui_menu_file_for_finding_all_existing_relief_forms
+};
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> [Агенты - это sc-программы, работающие над базой знаний] (* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> [Agents - is a sc-proggrams, works in knowledge base] (* <- lang_en;; *);;
+		*);;
+	*);;

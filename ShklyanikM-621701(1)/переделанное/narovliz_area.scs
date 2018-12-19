@@ -1,0 +1,54 @@
+Narovlia_area<-concept_area;;
+Narovlia_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+Narovlia_area->nrel_administrative_center_of_the_area:Narovlia;;
+Narovlia<-concept_city;;
+
+Narovlia_area  => nrel_highest_point: [111];;
+
+Narovlia_area => nrel_area_of_the_district: [1588];;
+
+Narovlia_area => nrel_population_of_region: [10563];;
+
+
+Narovlia_area <- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+*);;
+*);;
+Narovlia_area => nrel_main_idtf: [Опр.(Наровлянский район)]  (* <- lang_ru;; *);;
+Narovlia_area <= nrel_sc_text_translation:...
+(*
+->rrel_example:[Наровлянский район — административная единица Гомельской области.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+Narovlia_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район,река)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Основные реки Наровлянского района - Западная Двина,Днепр.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+
+sc_node_not_relation -> Narovlia_area;;
+Narovlia_area => nrel_main_idtf:
+[Наровлянский район](* <-lang_ru;; *);
+[ Narovlia area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Narovlia;;
+Narovlia=> nrel_main_idtf:
+[Наровляны](* <-lang_ru;; *);
+[Narovlia](* <- lang_en;; *);;

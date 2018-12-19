@@ -1,0 +1,70 @@
+Buda_Koshelevo_area<-concept_area;;
+Buda_Koshelevo_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Buda_Koshelevo_area->nrel_administrative_center_of_the_area:Buda_Koshelevo;;
+Buda_Koshelevo<-concept_city;;
+
+Buda_Koshelevo_area  => nrel_highest_point: [ 157];;
+Buda_Koshelevo_area => nrel_area_of_the_district: [1595];;
+Buda_Koshelevo_area => nrel_population_of_region: [29531];;
+
+
+
+//ÐžÑÐ¿ÐŸÐ»ÑÐ·ÑÐµÐŒÑÐµ ÐºÐŸÐœÑÑÐ°ÐœÑÑ
+Buda_Koshelevo_area <- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+*);;
+=> nrel_main_idtf: [Опр.(Буда-Кошелёвский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Буда-Кошелёвский район - административная единица на северо-востоке Гомельской области.](* <- lang_ru;; *);;
+*);;
+*);;
+
+	
+//ÑÑÐ²ÐµÑÐ¶ÐŽÐµÐœÐžÑ
+Buda_Koshelevo_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[На северо-западе Буда-Кошелёвский район граничит с Рогачёвским районом.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+Buda_Koshelevo_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район,река)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Основные реки Буда-Кошелёвского района - Днепр и Уза.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+
+sc_node_not_relation -> Buda_Koshelevo_area;;
+Buda_Koshelevo_area => nrel_main_idtf:
+[Буда-Кошелёвский район](* <-lang_ru;; *);
+[Buda-Koshelevo area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Buda_Koshelevo;;
+Buda_Koshelevo=> nrel_main_idtf:
+[Буда-Кошелёво](* <-lang_ru;; *);
+[Buda-Koshelevo](* <- lang_en;; *);;

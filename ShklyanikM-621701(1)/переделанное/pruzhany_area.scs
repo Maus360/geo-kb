@@ -1,0 +1,24 @@
+Pruzhany_area<-concept_area;;
+Pruzhany_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Pruzhany_area->nrel_administrative_center_of_the_area:Pruzhany;;
+Pruzhany<-concept_city;;
+
+Pruzhany_area  => nrel_highest_point: [ 202];;
+Pruzhany_area => nrel_area_of_the_district: [2826];;
+Pruzhany_area => nrel_population_of_region: [46864];;
+
+
+
+
+sc_node_not_relation -> Pruzhany_area;;
+Pruzhany_area => nrel_main_idtf:
+[Пружанский район](* <-lang_ru;; *);
+[Pruzhany area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Pruzhany;;
+Pruzhany=> nrel_main_idtf:
+[Пружаны](* <-lang_ru;; *);
+[Pruzhany](* <- lang_en;; *);;

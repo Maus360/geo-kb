@@ -1,0 +1,154 @@
+sc_node_not_relation -> concept_subject_domain_of_anthropogenic_relief;;
+concept_subject_domain_of_anthropogenic_relief => nrel_main_idtf:
+[Предметная область антропогенный рельеф](* <-lang_ru;; *);
+	[anthropogenic relief](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_russian_language;;
+concept_russian_language => nrel_main_idtf:
+[Русский язык](* <-lang_ru;; *);
+	[Russian language](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_english_language;;
+concept_english_language => nrel_main_idtf:
+[Английский язык](* <-lang_ru;; *);
+	[English language](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_type;;
+concept_statement_of_general_type => nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);
+	[statement of general type](* <- lang_en;; *);;
+
+sc_node_not_relation -> sc_definition_statement;;
+sc_definition_statement => nrel_main_idtf:
+[утверждение определяющего вида](* <-lang_ru;; *);
+	[definition statement](* <- lang_en;; *);;
+
+sc_node_not_relation -> sc_statement;;
+sc_statement => nrel_main_idtf:
+[утверждение](* <-lang_ru;; *);	
+[statement](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_subdividing;;
+nrel_subdividing => nrel_main_idtf:
+[разбиение*](* <-lang_ru;; *);
+[subdividing*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_inclusion;;
+nrel_inclusion => nrel_main_idtf:
+[включение*](* <-lang_ru;; *);
+[inclusion*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_using_constants;;
+nrel_using_constants => nrel_main_idtf:
+[используемые константы*](* <-lang_ru;; *);	
+[using constants*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_sc_text_translation;;
+nrel_sc_text_translation => nrel_main_idtf:
+[трансляция sc-текста*](* <-lang_ru;; *);
+[sc text translation*](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_key_sc_element;;
+rrel_key_sc_element => nrel_main_idtf:
+[ключевой sc-элемент'](* <-lang_ru;; *);	
+[key sc element'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_example;;
+rrel_example => nrel_main_idtf:
+[пример'](* <-lang_ru;; *);
+[example'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_theorem;;
+rrel_theorem => nrel_main_idtf:
+[теорема'](* <-lang_ru;; *);	
+[theorem'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_axiom;;
+rrel_axiom => nrel_main_idtf:
+[аксиома'](* <-lang_ru;; *);	
+[axiom'](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_hydraulic_engineering_structure;;
+concept_hydraulic_engineering_structure => nrel_main_idtf:
+[гидротехническое сооружение](* <-lang_ru;; *);
+	[hydraulic engineering structure](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_hydropower;;
+concept_hydropower => nrel_main_idtf:
+[гидроэнергия](* <-lang_ru;; *);
+	[hydropower](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_water_wheel;;
+concept_water_wheel => nrel_main_idtf:
+[водяное колесо](* <-lang_ru;; *);
+	[water wheel](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_river;;
+concept_river => nrel_main_idtf:
+[река](* <-lang_ru;; *);
+	[river](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_water;;
+concept_water => nrel_main_idtf:
+[вода](* <-lang_ru;; *);
+	[water](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_dike;;
+concept_dike => nrel_main_idtf:
+[плотина](* <-lang_ru;; *);
+	[dike](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_hole;;
+concept_hole => nrel_main_idtf:
+[отверстие](* <-lang_ru;; *);
+	[hole](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_enlargement;;
+nrel_enlargement => nrel_main_idtf:
+[увеличение*](* <-lang_ru;; *);
+	[enlargement*](* <- lang_en;; *);;
+
+//синонимы
+concept_water_mill => nrel_system_idtf: [concept_water_mill];;
+concept_water_mill => nrel_main_idtf: [водяная мельница] (* <- lang_ru;; *);;
+concept_water_mill => nrel_idtf: [water mill] (* <- lang_en;; *);;
+
+//определение
+concept_water_mill <- rrel_key_sc_element:...
+(*
+<- sc_definition_statement;;
+=> nrel_main_idtf: [Опр.(водяная мельница)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example: [Водяная мельница - гидротехническое сооружение, использующее гидроэнергию, получаемую с водяного колеса.](* <- lang_ru;; *);;
+*);;
+<= nrel_using_constants:...
+(*
+-> concept_hydraulic_engineering_structure;;
+-> concept_hydropower;;
+-> concept_water_wheel;;
+*);;
+*);; 
+
+//утверждение
+concept_water_mill <- rrel_key_sc_element:...
+(*
+<- sc_statement;;
+<- concept_statement_of_general_type;;
+<- rrel_axiom: concept_subject_domain_of_anthropogenic_relief
+   (*
+      <- subject_domain;;
+   *);;
+=> nrel_main_idtf: [Утв.(водяная мельница, увеличене*, гидроэнергия, река, плотина, отверстие, вода)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Для увеличения получаемой водяной мельницей гидроэнергии реку перегораживают плотиной с отверстием для воды.](* <- lang_ru;; *);;
+*);;
+-> rrel_key_sc_element: concept_hydropower;;
+-> rrel_key_sc_element: concept_river;;
+-> rrel_key_sc_element: concept_water;;
+-> rrel_key_sc_element: concept_dike;;
+-> rrel_key_sc_element: concept_hole;;
+-> rrel_key_sc_element: nrel_enlargement;;
+*);;

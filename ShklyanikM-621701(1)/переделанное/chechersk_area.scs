@@ -1,0 +1,54 @@
+Chechersk_area<-concept_area;;
+Chechersk_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+Chechersk_area->nrel_administrative_center_of_the_area:Chechersk;;
+Chechersk<-concept_city;;
+
+Chechersk_area  => nrel_highest_point: [152];;
+
+Chechersk_area => nrel_area_of_the_district: [1299];;
+
+Chechersk_area => nrel_population_of_region: [14468];;
+
+
+Chechersk_area <- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+*);;
+*);;
+Chechersk_area => nrel_main_idtf: [Опр.(Чечерский район)]  (* <- lang_ru;; *);;
+Chechersk_area <= nrel_sc_text_translation:...
+(*
+->rrel_example:[Чечерский район — административная единица Гомельской области.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+Chechersk_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район,река)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Основные реки Чечерского района - Западная Двина,Днепр.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+
+sc_node_not_relation -> Chechersk_area;;
+Chechersk_area => nrel_main_idtf:
+[Чечерский район](* <-lang_ru;; *);
+[ Chechersk area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Chechersk;;
+Chechersk=> nrel_main_idtf:
+[Чечерск](* <-lang_ru;; *);
+[Chechersk](* <- lang_en;; *);;

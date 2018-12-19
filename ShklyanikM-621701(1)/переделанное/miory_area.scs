@@ -1,0 +1,25 @@
+Miory_area<-concept_area;;
+Miory_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Miory_area->nrel_administrative_center_of_the_area:Miory;;
+Miory<-concept_city;;
+
+Miory_area  => nrel_highest_point: [ 210];;
+Miory_area => nrel_area_of_the_district: [1787];;
+Miory_area => nrel_population_of_region: [20737];;
+
+
+
+
+
+sc_node_not_relation -> Miory_area;;
+Miory_area => nrel_main_idtf:
+[Миорский район](* <-lang_ru;; *);
+[Miory area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Miory;;
+Miory=> nrel_main_idtf:
+[Миоры](* <-lang_ru;; *);
+[Miory](* <- lang_en;; *);;

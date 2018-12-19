@@ -1,0 +1,54 @@
+Hoiniki_area<-concept_area;;
+Hoiniki_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+Hoiniki_area->nrel_administrative_center_of_the_area:Hoiniki;;
+Hoiniki<-concept_city;;
+
+Hoiniki_area  => nrel_highest_point: [145];;
+
+Hoiniki_area => nrel_area_of_the_district: [2027];;
+
+Hoiniki_area => nrel_population_of_region: [19539];;
+
+
+Hoiniki_area <- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+*);;
+*);;
+Hoiniki_area => nrel_main_idtf: [Опр.(Хойникский район)]  (* <- lang_ru;; *);;
+Hoiniki_area <= nrel_sc_text_translation:...
+(*
+->rrel_example:[Хойникский район — административная единица Гомельской области.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+Hoiniki_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район,река)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Основные реки Хойникского района - Западная Двина,Днепр.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+
+sc_node_not_relation -> Hoiniki_area;;
+Hoiniki_area => nrel_main_idtf:
+[Хойникский район(* <-lang_ru;; *);
+[ Hoiniki area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Hoiniki;;
+Hoiniki=> nrel_main_idtf:
+[Хойники](* <-lang_ru;; *);
+[Hoiniki](* <- lang_en;; *);;

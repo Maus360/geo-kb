@@ -1,0 +1,14 @@
+Glubokoe_area<-concept_area;;
+Glubokoe_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//адм центр
+Glubokoe_area->nrel_administrative_center_of_the_area:Glubokoe;;
+Glubokoe<-concept_city;;
+
+Glubokoe_area  => nrel_highest_point: [ 226];;
+Glubokoe_area => nrel_area_of_the_district: [1780];;
+Glubokoe_area => nrel_population_of_region: [37712];;
+//самая высокая точка
+
+

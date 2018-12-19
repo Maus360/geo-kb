@@ -1,0 +1,27 @@
+Ivanovo_area<-concept_area;;
+Ivanovo_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Ivanovo_area->nrel_administrative_center_of_the_area:Ivanovo;;
+Ivanovo<-concept_city;;
+
+
+Ivanovo_area  => nrel_highest_point: [ 195];;
+Ivanovo_area => nrel_area_of_the_district: [1551];;
+Ivanovo_area => nrel_population_of_region: [38353];;
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+
+
+
+
+
+sc_node_not_relation ->  Ivanovo_area;;
+ Ivanovo_area => nrel_main_idtf:
+[Ивановский район](* <-lang_ru;; *);
+[ Ivanovo area](* <- lang_en;; *);;
+
+sc_node_not_relation -> Ivanovo;;
+ Ivanovo=> nrel_main_idtf:
+[Иваново](* <-lang_ru;; *);
+[ Ivanovo](* <- lang_en;; *);;

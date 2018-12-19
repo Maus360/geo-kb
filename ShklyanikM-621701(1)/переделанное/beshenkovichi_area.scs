@@ -1,0 +1,74 @@
+Beshenkovichi_area<-concept_area;;
+Beshenkovichi_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Beshenkovichi_area->nrel_administrative_center_of_the_area:Beshenkovichi;;
+Beshenkovichi<-concept_township;;
+
+Beshenkovichi_area  => nrel_highest_point: [ 199];;
+
+Beshenkovichi_area => nrel_area_of_the_district: [1250];;
+
+Beshenkovichi_area => nrel_population_of_region: [15904];;
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+
+
+//ÐžÑÐ¿ÐŸÐ»ÑÐ·ÑÐµÐŒÑÐµ ÐºÐŸÐœÑÑÐ°ÐœÑÑ
+Beshenkovichi_area <- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+*);;
+ => nrel_main_idtf: [Опр.(Бешенковичский район)]  (* <- lang_ru;; *);;
+ <= nrel_sc_text_translation:...
+(*
+->rrel_example:[Бешенковичский район - административная единица в центре Витебской области.](* <- lang_ru;; *);;
+*);;
+*);;
+
+	
+//ÑÑÐ²ÐµÑÐ¶ÐŽÐµÐœÐžÑ
+Beshenkovichi_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район,река,приток*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Основные реки Бешенковичского района - Западная Двина и её притоки Улла, Кривинка.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+Beshenkovichi_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район,озеро)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Самые большие озёра Бешенковичского района - Соро, Боровно, Белое.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+
+sc_node_not_relation -> Beshenkovichi_area;;
+Beshenkovichi_area => nrel_main_idtf:
+[Бешенковичский район](* <-lang_ru;; *);
+[Beshenkovichi area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Beshenkovichi;;
+Beshenkovichi=> nrel_main_idtf:
+[Бешенковичи](* <-lang_ru;; *);
+[Beshenkovichi](* <- lang_en;; *);;
+
+

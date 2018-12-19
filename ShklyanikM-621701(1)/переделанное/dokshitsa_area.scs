@@ -1,0 +1,30 @@
+Dokshitsa_area<-concept_area;;
+Dokshitsa_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Dokshitsa_area->nrel_administrative_center_of_the_area:Dokshitsa;;
+Dokshitsa<-concept_city;;
+
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+Dokshitsa_area  => nrel_highest_point: [ 223];;
+Dokshitsa_area => nrel_area_of_the_district: [2268];;
+Dokshitsa_area => nrel_population_of_region: [23500];;
+
+//Ð¿Ð»ÐŸÑÐ°ÐŽÑ ÑÐ°Ð¹ÐŸÐœÐ°
+
+
+
+
+
+sc_node_not_relation -> Dokshitsa_area;;
+Dokshitsa_area => nrel_main_idtf:
+[Докшицкий район](* <-lang_ru;; *);
+[Dokshitsa area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Dokshitsa;;
+Dokshitsa=> nrel_main_idtf:
+[Докшицы](* <-lang_ru;; *);
+[Dokshitsa](* <- lang_en;; *);;
+
+

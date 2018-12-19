@@ -1,0 +1,14 @@
+Gorodok_area<-concept_area;;
+Gorodok_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//адм центр
+Gorodok_area->nrel_administrative_center_of_the_area:Gorodok;;
+Gorodok<-concept_city;;
+
+Gorodok_area  => nrel_highest_point: [ 259];;
+Gorodok_area => nrel_area_of_the_district: [2980];;
+Gorodok_area => nrel_population_of_region: [22932];;
+//самая высокая точка
+
+

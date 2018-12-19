@@ -1,0 +1,14 @@
+Yelsk_area<-concept_area;;
+Yelsk_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+//адм центр
+Yelsk_area->nrel_administrative_center_of_the_area:Yelsk;;
+Yelsk<-concept_city;;
+
+Yelsk_area  => nrel_highest_point: [ 185];;
+Yelsk_area => nrel_area_of_the_district: [1365];;
+Yelsk_area => nrel_population_of_region: [15570];;
+
+
+

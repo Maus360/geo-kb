@@ -1,0 +1,146 @@
+sc_node_not_relation -> concept_subject_domain_of_anthropogenic_relief;;
+concept_subject_domain_of_anthropogenic_relief => nrel_main_idtf:
+[Предметная область антропогенный рельеф](* <-lang_ru;; *);
+	[anthropogenic relief](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_russian_language;;
+concept_russian_language => nrel_main_idtf:
+[Русский язык](* <-lang_ru;; *);
+	[Russian language](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_english_language;;
+concept_english_language => nrel_main_idtf:
+[Английский язык](* <-lang_ru;; *);
+	[English language](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_type;;
+concept_statement_of_general_type => nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);
+	[statement of general type](* <- lang_en;; *);;
+
+sc_node_not_relation -> sc_definition_statement;;
+sc_definition_statement => nrel_main_idtf:
+[утверждение определяющего вида](* <-lang_ru;; *);
+	[definition statement](* <- lang_en;; *);;
+
+sc_node_not_relation -> sc_statement;;
+sc_statement => nrel_main_idtf:
+[утверждение](* <-lang_ru;; *);	
+[statement](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_subdividing;;
+nrel_subdividing => nrel_main_idtf:
+[разбиение*](* <-lang_ru;; *);
+[subdividing*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_inclusion;;
+nrel_inclusion => nrel_main_idtf:
+[включение*](* <-lang_ru;; *);
+[inclusion*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_using_constants;;
+nrel_using_constants => nrel_main_idtf:
+[используемые константы*](* <-lang_ru;; *);	
+[using constants*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_sc_text_translation;;
+nrel_sc_text_translation => nrel_main_idtf:
+[трансляция sc-текста*](* <-lang_ru;; *);
+[sc text translation*](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_key_sc_element;;
+rrel_key_sc_element => nrel_main_idtf:
+[ключевой sc-элемент'](* <-lang_ru;; *);	
+[key sc element'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_example;;
+rrel_example => nrel_main_idtf:
+[пример'](* <-lang_ru;; *);
+[example'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_theorem;;
+rrel_theorem => nrel_main_idtf:
+[теорема'](* <-lang_ru;; *);	
+[theorem'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_axiom;;
+rrel_axiom => nrel_main_idtf:
+[аксиома'](* <-lang_ru;; *);	
+[axiom'](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_gesenk;;
+concept_gesenk => nrel_main_idtf:
+[гезенк](* <-lang_ru;; *);
+	[gesenk](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_excavation;;
+concept_excavation => nrel_main_idtf:
+[горная выработка](* <-lang_ru;; *);
+	[excavation](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_surface;;
+concept_surface => nrel_main_idtf:
+[поверхность](* <-lang_ru;; *);
+	[surface](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_exit;;
+nrel_exit => nrel_main_idtf:
+[выход*](* <-lang_ru;; *);
+	[exit*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_layer;;
+concept_layer => nrel_main_idtf:
+[пласт](* <-lang_ru;; *);
+	[layer](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_mine;;
+concept_mine => nrel_main_idtf:
+[шахта](* <-lang_ru;; *);
+	[mine](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_connection;;
+nrel_connection => nrel_main_idtf:
+[соединение*](* <-lang_ru;; *);
+[connection*](* <- lang_en;; *);;
+
+//синонимы
+concept_gesenk => nrel_system_idtf: [concept_gesenk];;
+concept_gesenk => nrel_main_idtf: [гезенк] (* <- lang_ru;; *);;
+concept_gesenk => nrel_idtf: [gesenk] (* <- lang_en;; *);;
+
+//определение
+concept_gesenk <- rrel_key_sc_element:...
+(*
+<- sc_definition_statement;;
+=> nrel_main_idtf: [Опр.(гезенк)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example: [Гезенк - подземная вертикальная или крутая наклонная горная выработка, не имеющая непосредственного выхода на поверхность.](* <- lang_ru;; *);;
+*);;
+<= nrel_using_constants:...
+(*
+-> concept_excavation;;
+-> concept_surface;;
+-> nrel_exit;;
+*);;
+*);;
+
+//утверждение
+concept_skew <- rrel_key_sc_element:...
+(*
+<- sc_statement;;
+<- concept_statement_of_general_type;;
+<- rrel_axiom: concept_subject_domain_of_anthropogenic_relief
+   (*
+      <- subject_domain;;
+   *);;
+=> nrel_main_idtf: [Утв.(гезенк, пласт, шахта, соединение*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Гезенк соединяет различные пласты в шахте.](* <- lang_ru;; *);;
+*);;
+-> rrel_key_sc_element: concept_layer;;
+-> rrel_key_sc_element: concept_mine;;
+-> rrel_key_sc_element: nrel_connection;;
+*);;

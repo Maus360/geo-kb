@@ -1,0 +1,16 @@
+Vitebsk_area<-concept_area;;
+Vitebsk_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//адм центр
+Vitebsk_area->nrel_administrative_center_of_the_area:Vitebsk;;
+Vitebsk<-concept_city;;
+
+//самая высокая точка
+Vitebsk_area  => nrel_highest_point: [ 266];;
+Vitebsk_area => nrel_area_of_the_district: [2737];;
+Vitebsk_area => nrel_population_of_region: [37051];;
+
+
+
+

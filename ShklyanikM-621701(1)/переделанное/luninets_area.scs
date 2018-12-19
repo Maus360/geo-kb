@@ -1,0 +1,26 @@
+Luninets_area<-concept_area;;
+Luninets_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Luninets_area->nrel_administrative_center_of_the_area:Luninets;;
+Luninets<-concept_city;;
+
+
+Luninets_area  => nrel_highest_point: [ 152];;
+Luninets_area => nrel_area_of_the_district: [2709];;
+Luninets_area => nrel_population_of_region: [66826];;
+
+
+
+
+
+sc_node_not_relation -> Luninets_area;;
+Luninets_area => nrel_main_idtf:
+[Лунинецкий район](* <-lang_ru;; *);
+[Luninets area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Luninets;;
+Luninets=> nrel_main_idtf:
+[Лунинец](* <-lang_ru;; *);
+[Luninets](* <- lang_en;; *);;

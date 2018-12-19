@@ -1,0 +1,24 @@
+Rogachev_area<-concept_area;;
+Rogachev_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Rogachev_area->nrel_administrative_center_of_the_area:Rogachev;;
+Rogachev<-concept_city;;
+
+Rogachev_area  => nrel_highest_point: [ 195];;
+Rogachev_area => nrel_area_of_the_district: [2067];;
+Rogachev_area => nrel_population_of_region: [57776];;
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+
+
+
+sc_node_not_relation -> Rogachev_area;;
+Rogachev_area => nrel_main_idtf:
+[Рогачёвский район](* <-lang_ru;; *);
+[Rogachev area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Rogachev;;
+Rogachev=> nrel_main_idtf:
+[Рогачёв](* <-lang_ru;; *);
+[Rogachev](* <- lang_en;; *);;

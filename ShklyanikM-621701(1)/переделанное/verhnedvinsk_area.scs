@@ -1,0 +1,16 @@
+Verhnedvinsk_area<-concept_area;;
+Verhnedvinsk_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//адм центр
+Verhnedvinsk_area->nrel_administrative_center_of_the_area:Verhnedvinsk;;
+Verhnedvinsk<-concept_city;;
+
+//самая высокая точка
+Verhnedvinsk_area  => nrel_highest_point: [ 191];;
+Verhnedvinsk_area => nrel_area_of_the_district: [2140];;
+Verhnedvinsk_area => nrel_population_of_region: [21876];;
+
+
+
+

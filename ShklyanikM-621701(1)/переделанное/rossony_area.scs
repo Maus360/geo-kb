@@ -1,0 +1,26 @@
+Rossony_area<-concept_area;;
+Rossony_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Rossony_area->nrel_administrative_center_of_the_area:Rossony;;
+Rossony<-concept_township;;
+
+Rossony_area  => nrel_highest_point: [ 224];;
+Rossony_area => nrel_area_of_the_district: [1927];;
+Rossony_area => nrel_population_of_region: [9517];;
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+
+
+
+
+sc_node_not_relation -> Rossony_area;;
+Rossony_area => nrel_main_idtf:
+[Россонсский район](* <-lang_ru;; *);
+[Rossony area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Rossony;;
+Rossony=> nrel_main_idtf:
+[Россоны](* <-lang_ru;; *);
+[Rossony](* <- lang_en;; *);;
+

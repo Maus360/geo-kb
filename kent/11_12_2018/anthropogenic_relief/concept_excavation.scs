@@ -1,0 +1,169 @@
+sc_node_not_relation -> concept_subject_domain_of_anthropogenic_relief;;
+concept_subject_domain_of_anthropogenic_relief => nrel_main_idtf:
+[Предметная область антропогенный рельеф](* <-lang_ru;; *);
+	[anthropogenic relief](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_russian_language;;
+concept_russian_language => nrel_main_idtf:
+[Русский язык](* <-lang_ru;; *);
+	[Russian language](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_english_language;;
+concept_english_language => nrel_main_idtf:
+[Английский язык](* <-lang_ru;; *);
+	[English language](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_type;;
+concept_statement_of_general_type => nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);
+	[statement of general type](* <- lang_en;; *);;
+
+sc_node_not_relation -> sc_definition_statement;;
+sc_definition_statement => nrel_main_idtf:
+[утверждение определяющего вида](* <-lang_ru;; *);
+	[definition statement](* <- lang_en;; *);;
+
+sc_node_not_relation -> sc_statement;;
+sc_statement => nrel_main_idtf:
+[утверждение](* <-lang_ru;; *);	
+[statement](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_subdividing;;
+nrel_subdividing => nrel_main_idtf:
+[разбиение*](* <-lang_ru;; *);
+[subdividing*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_inclusion;;
+nrel_inclusion => nrel_main_idtf:
+[включение*](* <-lang_ru;; *);
+[inclusion*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_using_constants;;
+nrel_using_constants => nrel_main_idtf:
+[используемые константы*](* <-lang_ru;; *);	
+[using constants*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_sc_text_translation;;
+nrel_sc_text_translation => nrel_main_idtf:
+[трансляция sc-текста*](* <-lang_ru;; *);
+[sc text translation*](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_key_sc_element;;
+rrel_key_sc_element => nrel_main_idtf:
+[ключевой sc-элемент'](* <-lang_ru;; *);	
+[key sc element'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_example;;
+rrel_example => nrel_main_idtf:
+[пример'](* <-lang_ru;; *);
+[example'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_theorem;;
+rrel_theorem => nrel_main_idtf:
+[теорема'](* <-lang_ru;; *);	
+[theorem'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_axiom;;
+rrel_axiom => nrel_main_idtf:
+[аксиома'](* <-lang_ru;; *);	
+[axiom'](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_cavity;;
+concept_cavity => nrel_main_idtf:
+[полость](* <-lang_ru;; *);
+	[cavity](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_excavation;;
+concept_excavation => nrel_main_idtf:
+[горная выработка](* <-lang_ru;; *);
+	[excavation](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_bowels_of_the_earth;;
+concept_bowels_of_the_earth => nrel_main_idtf:
+[недра земли](* <-lang_ru;; *);
+	[bowels of the earth](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_surface;;
+concept_surface => nrel_main_idtf:
+[поверхность](* <-lang_ru;; *);
+	[surface](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_relief_element;;
+concept_relief_element => nrel_main_idtf:
+[элемент рельефа](* <-lang_ru;; *);
+	[relief element](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_ground_excavation;;
+concept_ground_excavation => nrel_main_idtf:
+[наземная горная выработка](* <-lang_ru;; *);
+	[ground excavation](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_underground_excavation;;
+concept_underground_excavation => nrel_main_idtf:
+[подземная горная выработка](* <-lang_ru;; *);
+	[underground excavation](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_mine_field;;
+concept_mine_field => nrel_main_idtf:
+[шахтное поле](* <-lang_ru;; *);
+	[mine field](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_preparation;;
+nrel_preparation => nrel_main_idtf:
+[подготовка*](* <-lang_ru;; *);
+	[preparation*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_exploitation;;
+nrel_exploitation => nrel_main_idtf:
+[разработка*](* <-lang_ru;; *);
+	[exploitation*](* <- lang_en;; *);;
+
+//синонимы
+concept_excavation => nrel_system_idtf: [concept_excavation];;
+concept_excavation => nrel_main_idtf: [горная выработка] (* <- lang_ru;; *);;
+concept_excavation => nrel_idtf: [excavation] (* <- lang_en;; *);;
+
+//определение
+concept_excavation <- rrel_key_sc_element:...
+(*
+<- sc_definition_statement;;
+=> nrel_main_idtf: [Опр.(горная выработка)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example: [Горная выработка - искусственная полость, сделанная в недрах земли или на поверхности.](* <- lang_ru;; *);;
+*);;
+<= nrel_using_constants:...
+(*
+-> concept_cavity;;
+-> concept_bowels_of_the_earth;;
+-> concept_surface;;
+*);;
+*);;
+
+//включение и разбиение
+concept_relief_element => nrel_inclusion: concept_excavation;;
+concept_excavation => nrel_inclusion:...
+(*
+->concept_ground_excavation;;
+->concept_underground_excavation;;
+*);; 
+
+//утверждение
+concept_excavation <- rrel_key_sc_element:...
+(*
+<- sc_statement;;
+<- concept_statement_of_general_type;;
+<- rrel_axiom: concept_subject_domain_of_anthropogenic_relief
+   (*
+      <- subject_domain;;
+   *);;
+=> nrel_main_idtf: [Утв.(горная выработка, шахтное поле, подготовка*, разработка*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Горные выработки служат для подготовки шахтного поля к разработке.](* <- lang_ru;; *);;
+*);;
+-> rrel_key_sc_element: concept_mine_field;;
+-> rrel_key_sc_element: nrel_preparation;;
+-> rrel_key_sc_element: nrel_exploitation;;
+*);;

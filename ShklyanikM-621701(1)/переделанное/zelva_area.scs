@@ -1,0 +1,23 @@
+Zelva_area<-concept_area;;
+Zelva_area<=inclusion:Grodno_region;;
+Grodno_region<-concept_region;;
+
+Zelva_area->nrel_administrative_center_of_the_area:Zelva;;
+Zelva<-concept_city;;
+
+Zelva_area  => nrel_highest_point: [239];;
+
+Zelva_area => nrel_area_of_the_district: [870];;
+
+Zelva_area => nrel_population_of_region: [14754];;
+
+
+sc_node_not_relation -> Zelva_area;;
+Zelva_area => nrel_main_idtf:
+[Зельвенский район](* <-lang_ru;; *);
+[Zelva area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Zelva;;
+Zelva=> nrel_main_idtf:
+[Зельва](* <-lang_ru;; *);
+[Zelva](* <- lang_en;; *);;

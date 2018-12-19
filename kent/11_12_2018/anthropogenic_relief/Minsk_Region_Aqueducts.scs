@@ -1,0 +1,10 @@
+Minsk_Region_Aqueducts
+=> nrel_main_idtf:
+[Акведуки Минской области](*<-lang_ru;;*);
+[Minsk region aqueducts](*<-lang_en;;*);
+<= nrel_subdividing:
+{
+Vilensko_Minski_aqueduct;
+Minsko_Zaslavski_aqueduct
+};
+<-concept_aqueduct;;

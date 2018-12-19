@@ -1,0 +1,24 @@
+Ivatsevichi_area<-concept_area;;
+Ivatsevichi_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Ivatsevichi_area->nrel_administrative_center_of_the_area:Ivatsevichi;;
+Ivatsevichi<-concept_city;;
+
+Ivatsevichi_area  => nrel_highest_point: [ 184];;
+Ivatsevichi_area => nrel_area_of_the_district: [2998];;
+Ivatsevichi_area => nrel_population_of_region: [54848];;
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+
+
+
+sc_node_not_relation -> Ivatsevichi_area;;
+Ivatsevichi_area => nrel_main_idtf:
+[Ивацевичский район](* <-lang_ru;; *);
+[Ivatsevichi area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Ivatsevichi;;
+Ivatsevichi=> nrel_main_idtf:
+[Ивацевичи](* <-lang_ru;; *);
+[Ivatsevichi](* <- lang_en;; *);;

@@ -1,0 +1,27 @@
+Lepel_area<-concept_area;;
+Lepel_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Lepel_area->nrel_administrative_center_of_the_area:Lepel;;
+Lepel<-concept_city;;
+
+
+Lepel_area  => nrel_highest_point: [ 279];;
+Lepel_area => nrel_area_of_the_district: [1822];;
+Lepel_area => nrel_population_of_region: [33151];;
+
+
+
+
+
+sc_node_not_relation -> Lepel_area;;
+Lepel_area => nrel_main_idtf:
+[Лепельский район](* <-lang_ru;; *);
+[Lepel area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Lepel;;
+Lepel=> nrel_main_idtf:
+[Лепель](* <-lang_ru;; *);
+[Lepel](* <- lang_en;; *);;
+

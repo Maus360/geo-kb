@@ -1,0 +1,15 @@
+Volkovysk_area<-concept_area;;
+Volkovysk_area<=inclusion:Grodno_region;;
+Grodno_region<-concept_region;;
+
+//адм центр
+Volkovysk_area->nrel_administrative_center_of_the_area:Volkovysk;;
+Volkovysk<-concept_city;;
+
+//самая высокая точка
+Volkovysk_area  => nrel_highest_point: [ 235];;
+Volkovysk_area => nrel_area_of_the_district: [1192];;
+Volkovysk_area => nrel_population_of_region: [69720];;
+
+
+

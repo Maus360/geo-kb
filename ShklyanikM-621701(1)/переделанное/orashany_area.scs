@@ -1,0 +1,27 @@
+Orshany_area<-concept_area;;
+Orshany_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Orshany_area->nrel_administrative_center_of_the_area:Orshany;;
+Orshany<-concept_city;;
+
+Orshany_area  => nrel_highest_point: [ 238];;
+Orshany_area => nrel_area_of_the_district: [1668];;
+Orshany_area => nrel_population_of_region: [156411];;
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+
+
+
+
+
+sc_node_not_relation -> Orshany_area;;
+Orshany_area => nrel_main_idtf:
+[Оршанский район](* <-lang_ru;; *);
+[Orshany area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Orshany;;
+Orshany=> nrel_main_idtf:
+[Оршаны](* <-lang_ru;; *);
+[Orshany](* <- lang_en;; *);;
+

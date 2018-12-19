@@ -1,0 +1,25 @@
+Senno_area<-concept_area;;
+Senno_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Senno_area->nrel_administrative_center_of_the_area:Senno;;
+Senno<-concept_city;;
+
+Senno_area  => nrel_highest_point: [ 255];;
+Senno_area => nrel_area_of_the_district: [1966];;
+Senno_area => nrel_population_of_region: [22065];;
+
+
+
+
+sc_node_not_relation -> Senno_area;;
+Senno_area => nrel_main_idtf:
+[Сеннский район](* <-lang_ru;; *);
+[Senno area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Senno;;
+Senno=> nrel_main_idtf:
+[Сенно](* <-lang_ru;; *);
+[Senno](* <- lang_en;; *);;
+

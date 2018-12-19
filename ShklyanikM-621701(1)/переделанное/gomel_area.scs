@@ -1,0 +1,15 @@
+Gomel_area<-concept_area;;
+Gomel_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+//адм центр
+Gomel_area->nrel_administrative_center_of_the_area:Gomel;;
+Gomel<-concept_city;;
+
+Gomel_area  => nrel_highest_point: [144];;
+Gomel_area => nrel_area_of_the_district: [1955];;
+Gomel_area => nrel_population_of_region: [68306];;
+
+
+
+

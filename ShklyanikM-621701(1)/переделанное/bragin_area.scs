@@ -1,0 +1,70 @@
+Bragin_area<-concept_area;;
+Bragin_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Bragin_area->nrel_administrative_center_of_the_area:Bragin;;
+Bragin<-concept_township;;
+
+Bragin_area  => nrel_highest_point: [ 135];;
+Bragin_area => nrel_area_of_the_district: [1960];;
+Bragin_area => nrel_population_of_region: [11894];;
+
+
+
+//ÐžÑÐ¿ÐŸÐ»ÑÐ·ÑÐµÐŒÑÐµ ÐºÐŸÐœÑÑÐ°ÐœÑÑ
+Bragin_area <- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+*);;
+=> nrel_main_idtf: [Опр.(Брагинский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Брагинский район - административная единица на юге Гомельской области.](* <- lang_ru;; *);;
+*);;
+*);;
+
+	
+//ÑÑÐ²ÐµÑÐ¶ÐŽÐµÐœÐžÑ
+Bragin_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район,река,приток*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Основные реки Брагинского района - Днепр и Брагинка с притоком Несвич.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+Bragin_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район,лес,территория)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Лес занимает 28 % территории Брагинского района.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+
+sc_node_not_relation -> Bragin_area;;
+Bragin_area => nrel_main_idtf:
+[Брагинский район](* <-lang_ru;; *);
+[Bragin area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Bragin;;
+Bragin=> nrel_main_idtf:
+[Брагин](* <-lang_ru;; *);
+[Bragin](* <- lang_en;; *);;

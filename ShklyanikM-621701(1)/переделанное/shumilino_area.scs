@@ -1,0 +1,26 @@
+Shumilino_area<-concept_area;;
+Shumilino_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Shumilino_area->nrel_administrative_center_of_the_area:Shumilino;;
+Shumilino<-concept_township;;
+
+Shumilino_area  => nrel_highest_point: [ 266];;
+Shumilino_area => nrel_area_of_the_district: [1695];;
+Shumilino_area => nrel_population_of_region: [18263];;
+
+
+
+
+
+
+sc_node_not_relation -> Shumilino_area;;
+Shumilino_area => nrel_main_idtf:
+[Шумилинский район](* <-lang_ru;; *);
+[Shumilino area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Shumilino;;
+Shumilino=> nrel_main_idtf:
+[Шумилино](* <-lang_ru;; *);
+[Shumilino](* <- lang_en;; *);;

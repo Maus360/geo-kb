@@ -1,0 +1,153 @@
+sc_node_not_relation -> concept_subject_domain_of_anthropogenic_relief;;
+concept_subject_domain_of_anthropogenic_relief => nrel_main_idtf:
+[Предметная область антропогенный рельеф](* <-lang_ru;; *);
+	[anthropogenic relief](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_russian_language;;
+concept_russian_language => nrel_main_idtf:
+[Русский язык](* <-lang_ru;; *);
+	[Russian language](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_english_language;;
+concept_english_language => nrel_main_idtf:
+[Английский язык](* <-lang_ru;; *);
+	[English language](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_type;;
+concept_statement_of_general_type => nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);
+	[statement of general type](* <- lang_en;; *);;
+
+sc_node_not_relation -> sc_definition_statement;;
+sc_definition_statement => nrel_main_idtf:
+[утверждение определяющего вида](* <-lang_ru;; *);
+	[definition statement](* <- lang_en;; *);;
+
+sc_node_not_relation -> sc_statement;;
+sc_statement => nrel_main_idtf:
+[утверждение](* <-lang_ru;; *);	
+[statement](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_subdividing;;
+nrel_subdividing => nrel_main_idtf:
+[разбиение*](* <-lang_ru;; *);
+[subdividing*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_inclusion;;
+nrel_inclusion => nrel_main_idtf:
+[включение*](* <-lang_ru;; *);
+[inclusion*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_using_constants;;
+nrel_using_constants => nrel_main_idtf:
+[используемые константы*](* <-lang_ru;; *);	
+[using constants*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_sc_text_translation;;
+nrel_sc_text_translation => nrel_main_idtf:
+[трансляция sc-текста*](* <-lang_ru;; *);
+[sc text translation*](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_key_sc_element;;
+rrel_key_sc_element => nrel_main_idtf:
+[ключевой sc-элемент'](* <-lang_ru;; *);	
+[key sc element'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_example;;
+rrel_example => nrel_main_idtf:
+[пример'](* <-lang_ru;; *);
+[example'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_theorem;;
+rrel_theorem => nrel_main_idtf:
+[теорема'](* <-lang_ru;; *);	
+[theorem'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_axiom;;
+rrel_axiom => nrel_main_idtf:
+[аксиома'](* <-lang_ru;; *);	
+[axiom'](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_hydraulic_engineering_structure;;
+concept_hydraulic_engineering_structure => nrel_main_idtf:
+[гидротехническое сооружение](* <-lang_ru;; *);
+	[hydraulic engineering structure](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_water;;
+concept_water => nrel_main_idtf:
+[вода](* <-lang_ru;; *);
+	[water](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_tsunami;;
+concept_tsunami => nrel_main_idtf:
+[цунами](* <-lang_ru;; *);
+	[tsunami](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_ice;;
+concept_ice => nrel_main_idtf:
+[лед](* <-lang_ru;; *);
+	[ice](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_alluvium;;
+concept_alluvium => nrel_main_idtf:
+[нанос](* <-lang_ru;; *);
+	[alluvium](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_defense;;
+nrel_defense => nrel_main_idtf:
+[защита*](* <-lang_ru;; *);
+	[defense*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_jetty;;
+concept_jetty => nrel_main_idtf:
+[мол](* <-lang_ru;; *);
+	[jetty](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_coast;;
+nrel_coast => nrel_main_idtf:
+[берег*](* <-lang_ru;; *);
+	[coast*](* <- lang_en;; *);;
+
+//синонимы
+concept_breakwater => nrel_system_idtf: [concept_breakwater];;
+concept_breakwater => nrel_main_idtf: [волнолом] (* <- lang_ru;; *);;
+concept_breakwater => nrel_idtf: [breakwater] (* <- lang_en;; *);;
+
+//определение
+concept_breakwater <- rrel_key_sc_element:...
+(*
+<- sc_definition_statement;;
+=> nrel_main_idtf: [Опр.(волнолом)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example: [Волнолом - гидротехническое сооружение на воде, предназначенное для защиты берегов от цунами, льда и наносов.](* <- lang_ru;; *);;
+*);;
+<= nrel_using_constants:...
+(*
+-> concept_hydraulic_engineering_structure;;
+-> concept_water;;
+-> concept_tsunami;;
+-> concept_ice;;
+-> concept_alluvium;;
+-> nrel_defense;;
+*);;
+*);; 
+
+//утверждение
+concept_breakwater <- rrel_key_sc_element:...
+(*
+<- sc_statement;;
+<- concept_statement_of_general_type;;
+<- rrel_axiom: concept_subject_domain_of_anthropogenic_relief
+   (*
+      <- subject_domain;;
+   *);;
+=> nrel_main_idtf: [Утв.(волнолом, мол, берег*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Волнолом отличается от мола тем, что не примыкает к берегу.](* <- lang_ru;; *);;
+*);;
+-> rrel_key_sc_element: concept_jetty;;
+-> rrel_key_sc_element: nrel_coast;;
+*);;

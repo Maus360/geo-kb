@@ -1,0 +1,26 @@
+Dubrovno_area<-concept_area;;
+Dubrovno_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Dubrovno_area->nrel_administrative_center_of_the_area:Dubrovno;;
+Dubrovno<-concept_city;;
+
+Dubrovno_area  => nrel_highest_point: [ 227];;
+Dubrovno_area => nrel_area_of_the_district: [1250];;
+Dubrovno_area => nrel_population_of_region: [14637];;
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+
+
+
+
+sc_node_not_relation -> Dubrovno_area;;
+Dubrovno_area => nrel_main_idtf:
+[Дубровинский район](* <-lang_ru;; *);
+[Dubrovno area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Dubrovno;;
+Dubrovno=> nrel_main_idtf:
+[Дубровно](* <-lang_ru;; *);
+[Dubrovno](* <- lang_en;; *);;
+

@@ -1,0 +1,58 @@
+﻿Zhlobin_area<-concept_area;;
+Zhlobin_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+//Р°РґРј С†РµРЅС‚СЂ
+Zhlobin_area->nrel_administrative_center_of_the_area:Zhlobin;;
+Zhlobin<-concept_city;;
+
+Zhlobin_area  => nrel_highest_point: [ 185];;
+Zhlobin_area => nrel_area_of_the_district: [2110];;
+Zhlobin_area => nrel_population_of_region: [102017];;
+
+//РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ РєРѕРЅСЃС‚Р°РЅС‚С‹
+Zhlobin_area <- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+*);;
+=> nrel_main_idtf: [Опр.(Жлобинский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Жлобинский район — административная единица на северо-востоке Гомельской области.](* <- lang_ru;; *);;
+*);;
+*);;
+
+	
+//СѓС‚РІРµСЂР¶РґРµРЅРёСЏ
+Zhlobin_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(Жлобинский район,река)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Основные реки Жлобинского района -  Днепр, Березина и Добосна.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+//СѓС‚РІРµСЂР¶РґРµРЅРёСЏ
+Zhlobin_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(Жлобинский район,озеро)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Основные озёра Жлобинского района -  Бутач,Осушное,Веренское.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;

@@ -1,0 +1,28 @@
+Ushachi_area<-concept_area;;
+Ushachi_area<=inclusion:Vitebsk_region;;
+Vitebsk_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Ushachi_area->nrel_administrative_center_of_the_area:Ushachi;;
+Ushachi<-concept_township;;
+
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+Ushachi_area  => nrel_highest_point: [ 239];;
+Ushachi_area => nrel_area_of_the_district: [1489];;
+Ushachi_area => nrel_population_of_region: [13805];;
+
+
+
+
+
+
+sc_node_not_relation -> Ushachi_area;;
+Ushachi_area => nrel_main_idtf:
+[Ушачский район](* <-lang_ru;; *);
+[Ushachi area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Ushachi;;
+Ushachi=> nrel_main_idtf:
+[ Ушачи](* <-lang_ru;; *);
+[Ushachi](* <- lang_en;; *);;
+

@@ -1,0 +1,52 @@
+Berestovitsa_area<-concept_area;;
+Berestovitsa_area<=inclusion:Grodno_region;;
+Grodno_region<-concept_region;;
+
+Berestovitsa_area->nrel_administrative_center_of_the_area:Berestovitsa;;
+Berestovitsa<-concept_city;;
+
+Berestovitsa_area  => nrel_highest_point: [193];;
+
+Berestovitsa_area => nrel_area_of_the_district: [744];;
+
+Berestovitsa_area => nrel_population_of_region: [15440];;
+
+
+Berestovitsa_area <- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+*);;
+=> nrel_main_idtf: [Опр.(Берестовицкий район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Берестовицкий район - административная единица на западе Гродненской области.](* <- lang_ru;; *);;
+*);;
+*);;
+
+Berestovitsa_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район,река)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Основная река Берестовицкого района - Свислочь.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation -> Berestovitsa_area;;
+Berestovitsa_area => nrel_main_idtf:
+[Берестовицкий район](* <-lang_ru;; *);
+[ Berestovitsa area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Berestovitsa;;
+Berestovitsa=> nrel_main_idtf:
+[Берестовица](* <-lang_ru;; *);
+[Berestovitsa](* <- lang_en;; *);;

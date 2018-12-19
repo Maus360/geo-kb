@@ -1,0 +1,25 @@
+Petrikov_area<-concept_area;;
+Petrikov_area<=inclusion:Gomel_region;;
+Gomel_region<-concept_region;;
+
+//Ð°ÐŽÐŒ ÑÐµÐœÑÑ
+Petrikov_area->nrel_administrative_center_of_the_area:Petrikov;;
+Petrikov<-concept_city;;
+
+Petrikov_area  => nrel_highest_point: [ 190];;
+Petrikov_area => nrel_area_of_the_district: [2835];;
+Petrikov_area => nrel_population_of_region: [28246];;
+//ÑÐ°ÐŒÐ°Ñ Ð²ÑÑÐŸÐºÐ°Ñ ÑÐŸÑÐºÐ°
+
+
+
+
+sc_node_not_relation -> Petrikov_area;;
+Petrikov_area => nrel_main_idtf:
+[Петриковский район](* <-lang_ru;; *);
+[Petrikov area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Petrikov;;
+Petrikov=> nrel_main_idtf:
+[Петриков](* <-lang_ru;; *);
+[Petrikov](* <- lang_en;; *);;
